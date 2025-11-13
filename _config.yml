@@ -1,0 +1,29 @@
+title: "Finance Notes"
+description: "Tatva’s public research and finance notebook"
+theme: minima
+permalink: /:title/
+markdown: kramdown
+plugins:
+  - jekyll-feed
+  - jekyll-mentions
+exclude:
+  - .obsidian
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - README.md
+  - drafts
+
+collections:
+  posts:
+    output: true
+    permalink: /:title/
+
+defaults:
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: default
+
+

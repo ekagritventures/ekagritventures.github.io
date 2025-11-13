@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>{{ page.title }} — {{ site.title }}</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="{{ site.description }}">
+    <meta name="author" content="Tatva Desai">
+    <link rel="icon" href="/favicon.ico" sizes="32x32">
+    <link rel="stylesheet" href="/assets/styles.css" type="text/css">
+    <meta property="og:site_name" content="{{ site.title }}">
+    <meta property="og:title" content="{{ page.title }}">
+    <meta property="og:description" content="{{ site.description }}">
+    <meta name="twitter:card" content="summary">
+    <script>
+      if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+        document.documentElement.classList.add('theme-dark');
+      }
+    </script>
+  </head>
+  <body>
+    <nav class="flex align-center font-ui wrap">
+      <span class="flex-grow">
+        <a class="internal-link plain" href="/">{{ site.title }}</a>
+      </span>
+      <span class="flex-shrink ssr">
+        <a href="/about" class="muted plain">About</a>
+        <a href="/now" class="muted plain ssl mh">Now</a>
+      </span>
+      <span id="theme-toggle" title="Toggle dark mode" aria-label="Toggle dark mode" type="button" role="switch">
+        <div class="theme-toggle-slide"></div>
+        <div class="theme-toggle-switch"></div>
+      </span>
+    </nav>
+    <main>
+      <div class="wrap">
+        {{ content }}
+      </div>
+    </main>
+    <footer>
+      <div class="pn2 bt wrap">
+        <p class="muted font-ui">Built from Markdown with Jekyll. Flexoki-inspired palette.</p>
+      </div>
+    </footer>
+    <script>
+      var darkModeToggle = document.querySelector("#theme-toggle");
+      function toggleTheme() {
+        document.documentElement.classList.toggle("theme-dark");
+        updateThemeState();
+      }
+      function updateThemeState() {
+        let isDarkMode = document.documentElement.classList.contains("theme-dark");
+        let theme = isDarkMode ? "dark" : "light";
+        localStorage.setItem("theme", theme);
+        darkModeToggle.setAttribute("aria-checked", isDarkMode.toString());
+      }
+      function initializeTheme() {
+        let isDarkMode = document.documentElement.classList.contains("theme-dark");
+        darkModeToggle.setAttribute("aria-checked", isDarkMode.toString());
+      }
+      darkModeToggle.addEventListener("click", toggleTheme);
+      window.addEventListener('keydown', function(e) {
+        if (document.activeElement && (document.activeElement.tagName === 'INPUT' || document.activeElement.tagName === 'TEXTAREA')) { return; }
+        if ((e.key === 'd' || e.key === 'D') && !e.ctrlKey && !e.metaKey) { toggleTheme(); }
+      });
+      initializeTheme();
+    </script>
+  </body>
+</html>
+
+

@@ -1,0 +1,48 @@
+:root {
+  --bg: #fffcf0;
+  --fg: #100f0f;
+  --muted: #8b8680;
+  --accent: #d14d41;
+  --border: #d6d3c9;
+}
+:root.theme-dark {
+  --bg: #0c0c0b;
+  --fg: #efede6;
+  --muted: #a7a39a;
+  --accent: #ff6b5a;
+  --border: #2a2a28;
+}
+* { box-sizing: border-box; }
+html { background: var(--bg); color: var(--fg); }
+body { margin: 0; font-family: -apple-system, Inter, ui-sans-serif, system-ui, Segoe UI, Roboto, Helvetica Neue, Arial, sans-serif; line-height: 1.6; }
+.wrap { max-width: 760px; margin: 0 auto; padding: 1.25rem; }
+.font-ui { font-family: -apple-system, Inter, ui-sans-serif, system-ui, Segoe UI, Roboto, Helvetica Neue, Arial, sans-serif; }
+.flex { display: flex; }
+.align-center { align-items: center; }
+.align-baseline { align-items: baseline; }
+.flex-grow { flex: 1 1 auto; }
+.flex-shrink { flex: 0 0 auto; }
+.plain { text-decoration: none; color: inherit; }
+.internal-link { color: var(--accent); }
+.muted { color: var(--muted); }
+.small { font-size: 0.9rem; }
+.pb { padding-bottom: 0.25rem; }
+.mn2 { margin-top: 1rem; margin-bottom: 1rem; }
+.ms2 { margin-left: 0.5rem; margin-right: 0.5rem; }
+.bt { border-top: 1px solid var(--border); }
+.pn2 { padding: 1rem 0; }
+.list-plain { list-style: none; padding: 0; margin: 0; }
+.line-height-loose { line-height: 2; }
+nav { border-bottom: 1px solid var(--border); }
+h1, h2, h3 { margin: 1.25rem 0 0.5rem; }
+a { color: var(--accent); text-decoration: none; }
+a:hover { text-decoration: underline; }
+hr { border: 0; border-top: 1px solid var(--border); }
+.metadata { letter-spacing: 0.02em; }
+.theme-toggle-slide { width: 36px; height: 20px; border-radius: 999px; background: var(--border); position: relative; display: inline-block; vertical-align: middle; }
+.theme-toggle-switch { width: 16px; height: 16px; border-radius: 50%; background: var(--fg); position: relative; left: -28px; top: 2px; transition: transform 0.2s ease; pointer-events: none; }
+:root.theme-dark .theme-toggle-switch { transform: translateX(16px); }
+code, pre { background: rgba(0,0,0,0.04); padding: 0.1em 0.3em; border-radius: 4px; }
+:root.theme-dark code, :root.theme-dark pre { background: rgba(255,255,255,0.06); }
+
+
