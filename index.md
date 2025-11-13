@@ -2,8 +2,17 @@
 layout: default
 title: Home
 ---
-# Welcome
-Write notes in Obsidian as Markdown. Jekyll will build and publish automatically.
+# Curiosity first.
+
+Keep the main thing the main thing.
+
+Ekagrit Ventures is a personal archive of inquiry. Notes, questions, and investigations across finance, companies, and ideas. No narrative. No positioning. Just work done out of curiosity.
+
+## Sections
+- [Notes](/notes)
+- [Research](/research)
+- [Questions](/questions)
+- [Archive](/archive)
 
 ## Latest
 {% for post in site.posts limit:10 %}
