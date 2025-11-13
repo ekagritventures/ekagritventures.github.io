@@ -13,6 +13,9 @@ exclude:
   - node_modules
   - README.md
   - drafts
+  - obsidian-daily-note-template.md
+  - OBSIDIAN_SETUP_GUIDE.md
+  - DRAFT_MANAGEMENT_GUIDE.md
 
 collections:
   posts:

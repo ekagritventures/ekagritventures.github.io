@@ -1,5 +1,63 @@
+# Obsidian workspace files
 .obsidian/
+*.base
+*.canvas
+
+# macOS files
 .DS_Store
-.obsidian/
-.DS_Store
+.AppleDouble
+.LSOverride
+
+# Jekyll build files
+_site/
+.sass-cache/
+.jekyll-cache/
+.jekyll-metadata
+
+# Development files
 drafts/
+_drafts/
+
+# Obsidian link files
+create a link.md
+{{.md
+
+# Temporary files
+*.tmp
+*.temp
+*.log
+*.swp
+*.swo
+*~
+
+# Editor files
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# Ruby/bundler files
+.bundle/
+vendor/
+.ruby-version
+.ruby-gemset
+
+# Node files (if using any JS tools)
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Environment files (NEVER commit these)
+.env
+.env.local
+.env.development
+.env.test
+.env.production
+
+# API keys and secrets (add specific patterns as needed)
+*secret*
+*key*
+*token*
+*password*
+*api*

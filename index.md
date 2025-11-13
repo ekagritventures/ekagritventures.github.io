@@ -9,14 +9,20 @@ Keep the main thing the main thing.
 Ekagrit Ventures is a personal archive of inquiry. Notes, questions, and investigations across finance, companies, and ideas. No narrative. No positioning. Just work done out of curiosity.
 
 ## Sections
-- [Notes](/notes)
-- [Research](/research)
-- [Questions](/questions)
-- [Archive](/archive)
+- [Daily Notes](/notes/)
+- [Research](/research/)
+- [Questions](/questions/)
+- [Archive](/archive/)
 
-## Latest
-{% for post in site.posts limit:10 %}
-- [{{ post.title }}]({{ post.url }})
+---
+
+[Resources](/resources/) · [About](/about/)
+
+## Latest Daily Notes
+[View all daily notes →](/notes/)
+
+{% for post in site.posts limit:5 %}
+- **[{{ post.title }}]({{ post.url }})** - {{ post.date | date: "%B %d, %Y" }}
 {% endfor %}
 
 
