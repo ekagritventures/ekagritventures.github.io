@@ -1,7 +1,7 @@
 title: "Ekagrit Ventures"
 description: "Tatva’s public research and finance notebook"
 theme: minima
-permalink: /:title/
+permalink: /:slug/
 markdown: kramdown
 plugins:
   - jekyll-feed

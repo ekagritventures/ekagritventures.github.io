@@ -3,6 +3,14 @@
 *.base
 *.canvas
 
+# Documentation and guides (keep only essential files)
+*GUIDE*.md
+*guide*.md
+BEAUTIFUL_*.md
+OBSIDIAN_*.md  
+URL_*.md
+SIMPLE_*.md
+
 # macOS files
 .DS_Store
 .AppleDouble
@@ -30,6 +38,10 @@ create a link.md
 *.swo
 *~
 
+# Untitled files
+Untitled*
+untitled*
+
 # Editor files
 .vscode/
 .idea/
@@ -41,6 +53,12 @@ create a link.md
 vendor/
 .ruby-version
 .ruby-gemset
+.bundle/config
+
+# Jekyll development files
+.jekyll-metadata
+.sass-cache/
+.jekyll-cache/
 
 # Node files (if using any JS tools)
 node_modules/
