@@ -18,4 +18,6 @@ A collection of useful tools, references, and materials for finance research and
 
 - [Alix Pasquet](People/Alix%20Pasquet.md)
 - [Benedict Evans](People/Benedict%20Evans)
-- 
+
+https://docs.google.com/document/d/1LK6XBz1aVZszw70dSVkcBDh4YcgOWI8pCeamGxP6bVA/edit?tab=t.0
+

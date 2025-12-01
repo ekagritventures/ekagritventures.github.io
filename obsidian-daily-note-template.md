@@ -9,17 +9,11 @@ published: false
 
 # {{date:MMMM DD, YYYY}}
 
-## Market Focus
-- 
+## What did I read today?
 
-## Key Research
-- 
 
-## Observations
-- 
+## What did I watch today
 
-## Action Items
--
 
--
+
 
