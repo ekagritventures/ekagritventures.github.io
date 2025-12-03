@@ -22,7 +22,7 @@ Ekagrit Ventures is a personal archive of inquiry. Notes, questions, and investi
 [View all daily notes →](/notes/)
 
 {% for post in site.posts limit:5 %}
-- **[{{ post.title }}]({{ post.url }})** - {{ post.date | date: "%B %d, %Y" }}
+<li><a href="{{ post.url }}">{{ post.title }}</a> - {{ post.date | date: "%B %d, %Y" }}</li>
 {% endfor %}
 
 
