@@ -1,4 +1,159 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.10.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2025-11-14T22:55:59+05:30</updated><id>http://localhost:4000/feed.xml</id><title type="html">Ekagrit Ventures</title><subtitle>Tatva’s public research and finance notebook</subtitle><entry><title type="html">Daily Note 2025-11-14</title><link href="http://localhost:4000/daily-note-2025-nov-14-14th/" rel="alternate" type="text/html" title="Daily Note 2025-11-14" /><published>2025-11-14T00:00:00+05:30</published><updated>2025-11-14T00:00:00+05:30</updated><id>http://localhost:4000/daily-note-2025-nov-14-14th</id><content type="html" xml:base="http://localhost:4000/daily-note-2025-nov-14-14th/"><![CDATA[<p>So, <a href="/Companies/Pine-Labs">Pine Labs</a> got listed today. I watched it live. Nifty closed at 25,910. I have been checking it since it has been 21000. I am clearly a novice in the markets and I have to learn a lot. I have to learn because in order to generate ideas you need to pattern match and that comes from learning a lot of things.</p>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.10.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2025-12-03T23:23:30+05:30</updated><id>http://localhost:4000/feed.xml</id><title type="html">Ekagrit Ventures</title><subtitle>Tatva’s public research and finance notebook</subtitle><entry><title type="html">Daily Note 2025-12-01</title><link href="http://localhost:4000/daily-note-2025-Dec-01-1st/" rel="alternate" type="text/html" title="Daily Note 2025-12-01" /><published>2025-12-01T00:00:00+05:30</published><updated>2025-12-01T00:00:00+05:30</updated><id>http://localhost:4000/daily-note-2025-Dec-01-1st</id><content type="html" xml:base="http://localhost:4000/daily-note-2025-Dec-01-1st/"><![CDATA[<h2 id="what-did-i-read-today">What did I read today?</h2>
+
+<p><a href="https://eacpm.gov.in/wp-content/uploads/2025/11/Final_Durables-Consumption-Paper.pdf">Changes in Durable Goods Ownership in India</a></p>
+
+<h3 id="1-rural-india--monthly-per-capita-consumer-expenditure-mpce">1. Rural India – Monthly Per Capita Consumer Expenditure (MPCE)</h3>
+
+<table>
+  <thead>
+    <tr>
+      <th>Year</th>
+      <th>MPCE (₹)</th>
+      <th>Food (₹)</th>
+      <th>% Food</th>
+      <th>Consumables (₹)</th>
+      <th>% Consumables</th>
+      <th>Durables (₹)</th>
+      <th>% Durables</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>2011-12</td>
+      <td>1,430</td>
+      <td>756</td>
+      <td>52.9%</td>
+      <td>504</td>
+      <td>35.2%</td>
+      <td>170</td>
+      <td>11.9%</td>
+    </tr>
+    <tr>
+      <td>2023-24</td>
+      <td>4,122</td>
+      <td>1,939</td>
+      <td>47.0%</td>
+      <td>1,643</td>
+      <td>39.9%</td>
+      <td>540</td>
+      <td>13.1%</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Nominal growth (2011-12 to 2023-24):<br />
+Food +156% | Consumables +226% | Durables +218%</p>
+
+<h3 id="2-urban-india--monthly-per-capita-consumer-expenditure-mpce">2. Urban India – Monthly Per Capita Consumer Expenditure (MPCE)</h3>
+
+<table>
+  <thead>
+    <tr>
+      <th>Year</th>
+      <th>MPCE (₹)</th>
+      <th>Food (₹)</th>
+      <th>% Food</th>
+      <th>Consumables (₹)</th>
+      <th>% Consumables</th>
+      <th>Durables (₹)</th>
+      <th>% Durables</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>2011-12</td>
+      <td>2,630</td>
+      <td>1,121</td>
+      <td>42.6%</td>
+      <td>1,194</td>
+      <td>45.4%</td>
+      <td>315</td>
+      <td>12.0%</td>
+    </tr>
+    <tr>
+      <td>2023-24</td>
+      <td>6,996</td>
+      <td>2,776</td>
+      <td>39.7%</td>
+      <td>3,343</td>
+      <td>47.8%</td>
+      <td>877</td>
+      <td>12.5%</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Nominal growth (2011-12 to 2023-24):<br />
+Food +148% | Consumables +180% | Durables +178%</p>
+
+<h3 id="3-summary--change-in-expenditure-shares-2011-12-to-2023-24">3. Summary – Change in Expenditure Shares (2011-12 to 2023-24)</h3>
+
+<table>
+  <thead>
+    <tr>
+      <th>Area</th>
+      <th>Food share change</th>
+      <th>Consumables share change</th>
+      <th>Durables share change</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Rural</td>
+      <td>52.9% → 47.0% (-5.9 pp)</td>
+      <td>35.2% → 39.9% (+4.7 pp)</td>
+      <td>11.9% → 13.1% (+1.2 pp)</td>
+    </tr>
+    <tr>
+      <td>Urban</td>
+      <td>42.6% → 39.7% (-2.9 pp)</td>
+      <td>45.4% → 47.8% (+2.4 pp)</td>
+      <td>12.0% → 12.5% (+0.5 pp)</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2 id="what-did-i-watch-today">What did I watch today</h2>
+
+<p><a href="https://www.youtube.com/watch?v=zRkNO9yNYoI">Greg Jensen - Co-CIO of Bridgewater</a></p>
+
+<p><a href="https://youtube.com/playlist?list=PLX2SHiKfualH_xMbGM-3zWC47s9gUjGR_&amp;si=QUfs-aQuq5OG7eDk">Zerodha Varsity - Technical Anlaysis</a></p>]]></content><author><name></name></author><summary type="html"><![CDATA[What did I read today?]]></summary></entry><entry><title type="html">The AI saga.</title><link href="http://localhost:4000/the-ai-saga/" rel="alternate" type="text/html" title="The AI saga." /><published>2025-11-22T00:00:00+05:30</published><updated>2025-11-22T00:00:00+05:30</updated><id>http://localhost:4000/the-ai-saga</id><content type="html" xml:base="http://localhost:4000/the-ai-saga/"><![CDATA[<p>The new <a href="https://www.ben-evans.com/presentations">presentation</a> by <a href="/People/Benedict%20Evans">Benedict Evans</a> is good. It has introduced me to a concepts of Bundling and Unbundling. The kind of pattern matching that is being seen in the  <a href="https://www.ben-evans.com/presentations">presentation</a> is top-notch.</p>
+
+<p>He talks about the circular revenue of the companies and how tech which was once revolutionary, after the dust settles becomes a normal thing in day to day lives.</p>
+
+<p>He’s describing AI as the new platform shift. From Mainframes, PCs, Web, Smartphones now to AI. He argues that the new players are rarely the ones lasting when the hype gets over and new ones capture value and the technology becomes a part of our daily  life.</p>
+
+<p>A new platform leads to new tools, nowadays businesses use dozen of tools to manage their business, but back in the day it was all manual or one mainframe, as platforms emerged, tools we built on top of them. What are the tools that will be built on top of AI?</p>
+
+<p>One major way in which this platform shift is different from other ones is that we knew the physical limitations of the technologies. With LLMs the scaling laws appear to be holding very well as of now. So, we don’t see any barrier to the scale of this new technology.</p>
+
+<blockquote>
+  <p>“The risk of under-investing is significantly greater than the risk of over-investing”
+Sundar Pichai, Q2 2024</p>
+</blockquote>
+
+<blockquote>
+  <p>“The very worst case would be that we have just prebuilt for a couple of years”
+Mark Zuckerberg, Q3 2025</p>
+</blockquote>
+
+<p>This is driving the [[CapEx]] boom in  USA and it is just going to be increasing it seems. M7 companies are deploying capital at an unprecedented rate. $350 bn alone in 2025, this is going to be along cycle and CapEx might continue till 2030 with the kind of demand that is going to be there for data centres.</p>
+
+<p>After huge spending on research and engineering, there is no moat yet. American labs release a new model and within a few weeks, the Chinese Labs give out a mode at par or at better benchmarks than that of the American ones to the open-source community.</p>
+
+<p>A major question emerges: Where is the Value Capture?</p>
+
+<p>Is it capital, data, distribution, GTM, UI or something else completely.</p>
+
+<p>A normal person understands AI as ChatGPT. But there is a wide variety of models and use cases out there, instead of typing people are using tools like superwhisper or Whisper Flow to write to their models and are being more productive. Obvious use cases have been gobbled up by various companies such as coding, customer support, marketing and automation. A lot of new abstraction are being introduced.</p>
+
+<p>This is a question for the CEO, CIO and well as the CFO. All the C suite executives have a different view on the needs of AI, but what’s the endgame?</p>
+
+<p>Evans argues that we’re still early and deployment will take a long time and lots of bundling-unbundling will take place.</p>
+
+<p>I certainly feel it will be interesting to see what is going to happen and being an AI-hobbyist myself, this is exciting to me.</p>
+
+<p><em>All the mistakes are my own and my inexperience might lead to a wrong observations and wisecracking. Sorry and Thanks.</em></p>]]></content><author><name></name></author><summary type="html"><![CDATA[The new presentation by Benedict Evans is good. It has introduced me to a concepts of Bundling and Unbundling. The kind of pattern matching that is being seen in the presentation is top-notch.]]></summary></entry><entry><title type="html">Daily Note 2025-11-14</title><link href="http://localhost:4000/daily-note-2025-nov-14-14th/" rel="alternate" type="text/html" title="Daily Note 2025-11-14" /><published>2025-11-14T00:00:00+05:30</published><updated>2025-11-14T00:00:00+05:30</updated><id>http://localhost:4000/daily-note-2025-nov-14-14th</id><content type="html" xml:base="http://localhost:4000/daily-note-2025-nov-14-14th/"><![CDATA[<p>So, <a href="/Companies/Pine-Labs">Pine Labs</a> got listed today. I watched it live. Nifty closed at 25,910. I have been checking it since it has been 21000. I am clearly a novice in the markets and I have to learn a lot. I have to learn because in order to generate ideas you need to pattern match and that comes from learning a lot of things.</p>
 
 <p>I have watched a couple of <a href="/People/Alix%20Pasquet">Alix Pasquet</a>’s videos and they are phenomenal. It’s a game of reps, reps and reps.</p>]]></content><author><name></name></author><summary type="html"><![CDATA[So, Pine Labs got listed today. I watched it live. Nifty closed at 25,910. I have been checking it since it has been 21000. I am clearly a novice in the markets and I have to learn a lot. I have to learn because in order to generate ideas you need to pattern match and that comes from learning a lot of things.]]></summary></entry><entry><title type="html">presenting ekagrit ventures</title><link href="http://localhost:4000/first-post/" rel="alternate" type="text/html" title="presenting ekagrit ventures" /><published>2025-11-13T00:00:00+05:30</published><updated>2025-11-13T00:00:00+05:30</updated><id>http://localhost:4000/first-post</id><content type="html" xml:base="http://localhost:4000/first-post/"><![CDATA[<p>Presenting <strong>ekagrit ventures</strong>, a platform where I get to ramble about finance and startups. This first post starts with my entry into the capital markets. I have put some money here and there before. Nothing significant as such.</p>
 

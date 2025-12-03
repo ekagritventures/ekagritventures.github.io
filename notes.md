@@ -11,7 +11,8 @@ Daily research notes and observations from my finance and investment research.
 <div class="daily-note-entry">
   <h3><a href="{{ post.url }}">{{ post.title }}</a></h3>
   <p class="date">{{ post.date | date: "%B %d, %Y" }}</p>
-  {{ post.excerpt }}
+  {{ post.excerpt | strip_html | truncatewords: 36 }}
+
 </div>
 {% endfor %}
 

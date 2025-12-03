@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: post
 title: presenting ekagrit ventures
 date: 2025-11-13
 tags:

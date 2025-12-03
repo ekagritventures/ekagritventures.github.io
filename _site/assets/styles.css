@@ -33,3 +33,34 @@ article p,article ul,article ol{margin:0 0 1rem}
 article ul{padding-left:1.25rem}
 
 
+
+/* Tables */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1.5rem 0;
+  font-size: 0.9rem;
+}
+th, td {
+  padding: 0.75rem;
+  border: 1px solid #e6e6e6;
+  text-align: left;
+}
+th {
+  background: #f9f9f9;
+  font-weight: 600;
+}
+:root.theme-dark th {
+  background: #1a1a1a;
+  border-color: #333;
+}
+:root.theme-dark td {
+  border-color: #333;
+}
+
+/* Post Metadata */
+.post-date {
+  font-size: 0.9rem;
+  color: var(--muted);
+  margin-bottom: 2rem;
+}
