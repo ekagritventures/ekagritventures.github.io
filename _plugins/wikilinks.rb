@@ -36,18 +36,20 @@ module Jekyll
       process_content = ->(item) {
         next unless item.content.is_a?(String)
         
-        # Regex explanation:
-        # \[\[       Match opening brackets
-        # (.*?)      Capture Group 1: The link target (lazy match)
-        # (?:\|(.*?))? Optional Non-capturing group starting with pipe
-        #   \|       Match literal pipe
-        #   (.*?)    Capture Group 2: The link label (lazy match)
-        # \]\]       Match closing brackets
+        # New simplified logic:
+        # 1. Match anything inside [[ ... ]] that isn't a closing bracket
+        # 2. Split by pipe manually
         
-        item.content = item.content.gsub(/\[\[(.*?)(?:\|(.*?))?\]\]/) do |match|
-          link_target = Regexp.last_match(1).strip
-          link_label = Regexp.last_match(2)
-          link_label = link_label ? link_label.strip : link_target
+        item.content = item.content.gsub(/\[\[([^\]]+)\]\]/) do |match|
+          # 'match' is "[[Target|Label]]"
+          # 'inner' is "Target|Label"
+          inner = Regexp.last_match(1)
+          
+          # Split by pipe. limit: 2 ensures we only split on the first pipe if multiple exist (unlikely but safe)
+          parts = inner.split('|', 2)
+          
+          link_target = parts[0].strip
+          link_label = parts[1] ? parts[1].strip : link_target
           
           url = link_map[link_target] || link_map[link_target.downcase]
 
