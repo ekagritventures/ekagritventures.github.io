@@ -16,6 +16,7 @@ exclude:
   - obsidian-daily-note-template.md
   - OBSIDIAN_SETUP_GUIDE.md
   - DRAFT_MANAGEMENT_GUIDE.md
+  - vendor
 
 collections:
   posts:
