@@ -36,22 +36,25 @@ module Jekyll
       process_content = ->(item) {
         next unless item.content.is_a?(String)
         
+        # Regex explanation:
+        # \[\[       Match opening brackets
+        # (.*?)      Capture Group 1: The link target (lazy match)
+        # (?:\|(.*?))? Optional Non-capturing group starting with pipe
+        #   \|       Match literal pipe
+        #   (.*?)    Capture Group 2: The link label (lazy match)
+        # \]\]       Match closing brackets
+        
         item.content = item.content.gsub(/\[\[(.*?)(?:\|(.*?))?\]\]/) do |match|
           link_target = Regexp.last_match(1).strip
-          link_label = Regexp.last_match(2) || link_target
+          link_label = Regexp.last_match(2)
+          link_label = link_label ? link_label.strip : link_target
           
           url = link_map[link_target] || link_map[link_target.downcase]
 
           if url
             "[#{link_label}](#{url})"
           else
-            # Link not found: Keep it as text or make a broken link?
-            # Sticking to Obsidian style: it's a link to a missing page.
-            # But for the blog, let's just render the text to avoid 404s.
-            # Or user might want to know it's missing.
-            # Let's keep it as text for now to look clean.
             link_label
-            # Alternatively: "<span class='broken-link'>#{link_label}</span>"
           end
         end
       }
