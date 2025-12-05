@@ -1,5 +1,7 @@
 title: "Ekagrit Ventures"
 description: "Tatva’s public research and finance notebook"
+url: "https://ekagritventures.github.io"
+repository: "ekagritventures/ekagritventures.github.io"
 theme: minima
 permalink: /:slug/
 markdown: kramdown
