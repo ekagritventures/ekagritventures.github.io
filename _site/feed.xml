@@ -1,17 +1,8 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.10.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2025-12-05T11:55:12+05:30</updated><id>http://localhost:4000/feed.xml</id><title type="html">Ekagrit Ventures</title><subtitle>Tatva’s public research and finance notebook</subtitle><entry><title type="html">Daily Note 2025-12-05</title><link href="http://localhost:4000/daily-note-2025-Dec-05-5th/" rel="alternate" type="text/html" title="Daily Note 2025-12-05" /><published>2025-12-05T00:00:00+05:30</published><updated>2025-12-05T00:00:00+05:30</updated><id>http://localhost:4000/daily-note-2025-Dec-05-5th</id><content type="html" xml:base="http://localhost:4000/daily-note-2025-Dec-05-5th/"><![CDATA[<h1 id="december-05-2025">December 05, 2025</h1>
-
-<table>
-  <tbody>
-    <tr>
-      <td>Entered [[Companies/Groww</td>
-      <td>Groww]]  today at 148.25</td>
-    </tr>
-  </tbody>
-</table>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.4.1">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2025-12-06T22:09:13+05:30</updated><id>http://localhost:4000/feed.xml</id><title type="html">Ekagrit Ventures</title><subtitle>Tatva’s public research and finance notebook</subtitle><entry><title type="html">Daily Note 2025-12-05</title><link href="http://localhost:4000/daily-note-2025-Dec-05-5th/" rel="alternate" type="text/html" title="Daily Note 2025-12-05" /><published>2025-12-05T00:00:00+05:30</published><updated>2025-12-05T00:00:00+05:30</updated><id>http://localhost:4000/daily-note-2025-Dec-05-5th</id><content type="html" xml:base="http://localhost:4000/daily-note-2025-Dec-05-5th/"><![CDATA[<p>Entered <a href="/Companies/Groww/">Groww</a>  today at 148.25</p>
 
 <h2 id="what-did-i-read-today">What did I read today?</h2>
 
-<h2 id="what-did-i-watch-today">What did I watch today</h2>]]></content><author><name></name></author><summary type="html"><![CDATA[December 05, 2025]]></summary></entry><entry><title type="html">Daily Note 2025-12-01</title><link href="http://localhost:4000/daily-note-2025-Dec-01-1st/" rel="alternate" type="text/html" title="Daily Note 2025-12-01" /><published>2025-12-01T00:00:00+05:30</published><updated>2025-12-01T00:00:00+05:30</updated><id>http://localhost:4000/daily-note-2025-Dec-01-1st</id><content type="html" xml:base="http://localhost:4000/daily-note-2025-Dec-01-1st/"><![CDATA[<h2 id="what-did-i-read-today">What did I read today?</h2>
+<h2 id="what-did-i-watch-today">What did I watch today</h2>]]></content><author><name></name></author><category term="portfolio-update" /><summary type="html"><![CDATA[Entered [[Groww]] today at 148.25]]></summary></entry><entry><title type="html">Daily Note 2025-12-01</title><link href="http://localhost:4000/daily-note-2025-Dec-01-1st/" rel="alternate" type="text/html" title="Daily Note 2025-12-01" /><published>2025-12-01T00:00:00+05:30</published><updated>2025-12-01T00:00:00+05:30</updated><id>http://localhost:4000/daily-note-2025-Dec-01-1st</id><content type="html" xml:base="http://localhost:4000/daily-note-2025-Dec-01-1st/"><![CDATA[<h2 id="what-did-i-read-today">What did I read today?</h2>
 
 <p><a href="https://eacpm.gov.in/wp-content/uploads/2025/11/Final_Durables-Consumption-Paper.pdf">Changes in Durable Goods Ownership in India</a></p>
 
@@ -130,7 +121,7 @@ Food +148% | Consumables +180% | Durables +178%</p>
 
 <p><a href="https://www.youtube.com/watch?v=zRkNO9yNYoI">Greg Jensen - Co-CIO of Bridgewater</a></p>
 
-<p><a href="https://youtube.com/playlist?list=PLX2SHiKfualH_xMbGM-3zWC47s9gUjGR_&amp;si=QUfs-aQuq5OG7eDk">Zerodha Varsity - Technical Anlaysis</a></p>]]></content><author><name></name></author><summary type="html"><![CDATA[What did I read today?]]></summary></entry><entry><title type="html">The AI saga.</title><link href="http://localhost:4000/the-ai-saga/" rel="alternate" type="text/html" title="The AI saga." /><published>2025-11-22T00:00:00+05:30</published><updated>2025-11-22T00:00:00+05:30</updated><id>http://localhost:4000/the-ai-saga</id><content type="html" xml:base="http://localhost:4000/the-ai-saga/"><![CDATA[<p>The new <a href="https://www.ben-evans.com/presentations">presentation</a> by [[Benedict Evans]] is good. It has introduced me to a concepts of Bundling and Unbundling. The kind of pattern matching that is being seen in the  <a href="https://www.ben-evans.com/presentations">presentation</a> is top-notch.</p>
+<p><a href="https://youtube.com/playlist?list=PLX2SHiKfualH_xMbGM-3zWC47s9gUjGR_&amp;si=QUfs-aQuq5OG7eDk">Zerodha Varsity - Technical Anlaysis</a></p>]]></content><author><name></name></author><summary type="html"><![CDATA[What did I read today?]]></summary></entry><entry><title type="html">The AI saga.</title><link href="http://localhost:4000/the-ai-saga/" rel="alternate" type="text/html" title="The AI saga." /><published>2025-11-22T00:00:00+05:30</published><updated>2025-11-22T00:00:00+05:30</updated><id>http://localhost:4000/the-ai-saga</id><content type="html" xml:base="http://localhost:4000/the-ai-saga/"><![CDATA[<p>The new <a href="https://www.ben-evans.com/presentations">presentation</a> by <a href="/People/Benedict%20Evans/">Benedict Evans</a> is good. It has introduced me to a concepts of Bundling and Unbundling. The kind of pattern matching that is being seen in the  <a href="https://www.ben-evans.com/presentations">presentation</a> is top-notch.</p>
 
 <p>He talks about the circular revenue of the companies and how tech which was once revolutionary, after the dust settles becomes a normal thing in day to day lives.</p>
 
@@ -150,7 +141,7 @@ Sundar Pichai, Q2 2024</p>
 Mark Zuckerberg, Q3 2025</p>
 </blockquote>
 
-<p>This is driving the [[CapEx]] boom in  USA and it is just going to be increasing it seems. M7 companies are deploying capital at an unprecedented rate. $350 bn alone in 2025, this is going to be along cycle and CapEx might continue till 2030 with the kind of demand that is going to be there for data centres.</p>
+<p>This is driving the CapEx boom in  USA and it is just going to be increasing it seems. M7 companies are deploying capital at an unprecedented rate. $350 bn alone in 2025, this is going to be along cycle and CapEx might continue till 2030 with the kind of demand that is going to be there for data centres.</p>
 
 <p>After huge spending on research and engineering, there is no moat yet. American labs release a new model and within a few weeks, the Chinese Labs give out a mode at par or at better benchmarks than that of the American ones to the open-source community.</p>
 
@@ -166,28 +157,11 @@ Mark Zuckerberg, Q3 2025</p>
 
 <p>I certainly feel it will be interesting to see what is going to happen and being an AI-hobbyist myself, this is exciting to me.</p>
 
-<p><em>All the mistakes are my own and my inexperience might lead to a wrong observations and wisecracking. Sorry and Thanks.</em></p>]]></content><author><name></name></author><summary type="html"><![CDATA[The new presentation by [[Benedict Evans]] is good. It has introduced me to a concepts of Bundling and Unbundling. The kind of pattern matching that is being seen in the presentation is top-notch.]]></summary></entry><entry><title type="html">Daily Note 2025-11-14</title><link href="http://localhost:4000/daily-note-2025-nov-14-14th/" rel="alternate" type="text/html" title="Daily Note 2025-11-14" /><published>2025-11-14T00:00:00+05:30</published><updated>2025-11-14T00:00:00+05:30</updated><id>http://localhost:4000/daily-note-2025-nov-14-14th</id><content type="html" xml:base="http://localhost:4000/daily-note-2025-nov-14-14th/"><![CDATA[<table>
-  <tbody>
-    <tr>
-      <td>So, [[Pine-Labs</td>
-      <td>Pine Labs]] got listed today. I watched it live. Nifty closed at 25,910. I have been checking it since it has been 21000. I am clearly a novice in the markets and I have to learn a lot. I have to learn because in order to generate ideas you need to pattern match and that comes from learning a lot of things.</td>
-    </tr>
-  </tbody>
-</table>
+<p><em>All the mistakes are my own and my inexperience might lead to a wrong observations and wisecracking. Sorry and Thanks.</em></p>]]></content><author><name></name></author><summary type="html"><![CDATA[The new presentation by [[Benedict Evans]] is good. It has introduced me to a concepts of Bundling and Unbundling. The kind of pattern matching that is being seen in the presentation is top-notch.]]></summary></entry><entry><title type="html">Daily Note 2025-11-14</title><link href="http://localhost:4000/daily-note-2025-nov-14-14th/" rel="alternate" type="text/html" title="Daily Note 2025-11-14" /><published>2025-11-14T00:00:00+05:30</published><updated>2025-11-14T00:00:00+05:30</updated><id>http://localhost:4000/daily-note-2025-nov-14-14th</id><content type="html" xml:base="http://localhost:4000/daily-note-2025-nov-14-14th/"><![CDATA[<p>So, <a href="/Companies/Pine-Labs/">Pine Labs</a> got listed today. I watched it live. Nifty closed at 25,910. I have been checking it since it has been 21000. I am clearly a novice in the markets and I have to learn a lot. I have to learn because in order to generate ideas you need to pattern match and that comes from learning a lot of things.</p>
 
-<p>I have watched a couple of [[Alix Pasquet]]’s videos and they are phenomenal. It’s a game of reps, reps and reps.</p>]]></content><author><name></name></author><summary type="html"><![CDATA[So, [[Pine-Labs Pine Labs]] got listed today. I watched it live. Nifty closed at 25,910. I have been checking it since it has been 21000. I am clearly a novice in the markets and I have to learn a lot. I have to learn because in order to generate ideas you need to pattern match and that comes from learning a lot of things.]]></summary></entry><entry><title type="html">presenting ekagrit ventures</title><link href="http://localhost:4000/first-post/" rel="alternate" type="text/html" title="presenting ekagrit ventures" /><published>2025-11-13T00:00:00+05:30</published><updated>2025-11-13T00:00:00+05:30</updated><id>http://localhost:4000/first-post</id><content type="html" xml:base="http://localhost:4000/first-post/"><![CDATA[<p>Presenting <strong>ekagrit ventures</strong>, a platform where I get to ramble about finance and startups. This first post starts with my entry into the capital markets. I have put some money here and there before. Nothing significant as such.</p>
+<p>I have watched a couple of <a href="/People/Alix%20Pasquet/">Alix Pasquet</a>’s videos and they are phenomenal. It’s a game of reps, reps and reps.</p>]]></content><author><name></name></author><summary type="html"><![CDATA[So, [[Pine-Labs Pine Labs]] got listed today. I watched it live. Nifty closed at 25,910. I have been checking it since it has been 21000. I am clearly a novice in the markets and I have to learn a lot. I have to learn because in order to generate ideas you need to pattern match and that comes from learning a lot of things.]]></summary></entry><entry><title type="html">presenting ekagrit ventures</title><link href="http://localhost:4000/first-post/" rel="alternate" type="text/html" title="presenting ekagrit ventures" /><published>2025-11-13T00:00:00+05:30</published><updated>2025-11-13T00:00:00+05:30</updated><id>http://localhost:4000/first-post</id><content type="html" xml:base="http://localhost:4000/first-post/"><![CDATA[<p>Presenting <strong>ekagrit ventures</strong>, a platform where I get to ramble about finance and startups. This first post starts with my entry into the capital markets. I have put some money here and there before. Nothing significant as such.</p>
 
-<table>
-  <tbody>
-    <tr>
-      <td>This time, I have gone into the markets by applying for IPOs. I think it is a significant moment for any investor to apply to their first IPO. I applied for [[Groww]] and [[Pine-Labs</td>
-      <td>Pine Labs]] . [[Groww]] has given <em>22.9%</em> gain in 2 days. Alas, I didn’t get the allotment. However, there is such a thing as beginner’s luck in the market, and to my surprise. I have been allotted a lot of</td>
-    </tr>
-    <tr>
-      <td>[[Pine-Labs</td>
-      <td>Pine Labs]]. It opens tomorrow, and ekagrit ventures opens now.</td>
-    </tr>
-  </tbody>
-</table>
+<p>This time, I have gone into the markets by applying for IPOs. I think it is a significant moment for any investor to apply to their first IPO. I applied for <a href="/Companies/Groww/">Groww</a> and <a href="/Companies/Pine-Labs/">Pine Labs</a> . <a href="/Companies/Groww/">Groww</a> has given <em>22.9%</em> gain in 2 days. Alas, I didn’t get the allotment. However, there is such a thing as beginner’s luck in the market, and to my surprise. I have been allotted a lot of 
+<a href="/Companies/Pine-Labs/">Pine Labs</a>. It opens tomorrow, and ekagrit ventures opens now.</p>
 
 <p><strong><em>Welcome aboard, ladies and gentlemen!</em></strong></p>]]></content><author><name></name></author><summary type="html"><![CDATA[Presenting ekagrit ventures, a platform where I get to ramble about finance and startups. This first post starts with my entry into the capital markets. I have put some money here and there before. Nothing significant as such.]]></summary></entry></feed>
