@@ -50,7 +50,6 @@ module Jekyll
     # Check if content exists
     if doc.content
       doc.content = doc.content.gsub(/\[\[([^\]]+)\]\]/) do |match|
-        # 'inner' is "Target|Label"
         inner = Regexp.last_match(1)
         
         parts = inner.split('|', 2)
