@@ -2,8 +2,7 @@
 layout: post
 title: Daily Note {{date:YYYY-MM-DD}}
 slug: daily-note-{{date:YYYY}}-{{date:MMM-DD}}-{{date:Do}}
-date:
-  "{ date:YYYY-MM-DD }":
+date: "{{date:YYYY-MM-DD}}"
 tags:
 published: false
 ---
