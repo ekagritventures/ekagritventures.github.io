@@ -16,7 +16,8 @@ Ekagrit Ventures is a personal archive of inquiry. Notes, questions, and investi
 
 ---
 
-[Resources](/resources/) · [About](/about/)
+[Resources](/resources/) · [About](/about)
+
 
 ## Latest Daily Notes
 [View all daily notes →](/notes/)

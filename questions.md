@@ -2,6 +2,8 @@
 layout: default
 title: Questions
 ---
-Questions worth following until they break or reveal structure.
+
+WACC constituents and optimisations, why doesn't 99% of Debt make sense when it results in the lowest WACC?
+
 
 

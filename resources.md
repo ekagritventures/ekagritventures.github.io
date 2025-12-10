@@ -21,3 +21,6 @@ A collection of useful tools, references, and materials for finance research and
 
 https://docs.google.com/document/d/1LK6XBz1aVZszw70dSVkcBDh4YcgOWI8pCeamGxP6bVA/edit?tab=t.0
 
+## Excel & Technicalities
+
+[Excel with Pete](https://www.youtube.com/@TheUnexcitingGuy/videos)\
