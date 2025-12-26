@@ -229,3 +229,92 @@ th {
   text-align: right;
   margin-left: auto;
 }
+
+/* Hero Section */
+.hero {
+  margin: 2rem 0 3rem;
+}
+
+.hero-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin: 0 0 0.5rem;
+  letter-spacing: -0.5px;
+}
+
+.hero-subtitle {
+  font-size: 1.1rem;
+  color: var(--muted);
+  margin: 0 0 1.5rem;
+  font-weight: 500;
+}
+
+.hero-desc {
+  font-size: 1rem;
+  line-height: 1.7;
+  max-width: 540px;
+}
+
+/* Section Grid */
+.section-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+  margin: 2rem 0 3rem;
+}
+
+.section-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 1.5rem 1rem;
+  background: var(--code-bg);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  text-decoration: none;
+  color: var(--fg);
+  transition: all 0.2s ease;
+}
+
+.section-card:hover {
+  border-color: var(--link);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  text-decoration: none;
+}
+
+.section-icon {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.section-label {
+  font-weight: 600;
+  font-size: 0.95rem;
+}
+
+/* Latest Notes */
+.latest-notes {
+  margin-top: 2rem;
+}
+
+.latest-notes h2 {
+  font-size: 1.25rem;
+  margin-bottom: 1rem;
+}
+
+.notes-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.notes-list li {
+  padding: 0.5rem 0;
+  border-bottom: 1px solid var(--border);
+}
+
+.notes-list li:last-child {
+  border-bottom: none;
+}
