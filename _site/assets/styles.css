@@ -255,45 +255,6 @@ th {
   max-width: 540px;
 }
 
-/* Section Grid */
-.section-grid {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 1rem;
-  margin: 2rem 0 3rem;
-}
-
-.section-card {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  padding: 1.5rem 1rem;
-  background: var(--code-bg);
-  border: 1px solid var(--border);
-  border-radius: 12px;
-  text-decoration: none;
-  color: var(--fg);
-  transition: all 0.2s ease;
-}
-
-.section-card:hover {
-  border-color: var(--link);
-  transform: translateY(-2px);
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
-  text-decoration: none;
-}
-
-.section-icon {
-  font-size: 1.5rem;
-  margin-bottom: 0.5rem;
-}
-
-.section-label {
-  font-weight: 600;
-  font-size: 0.95rem;
-}
-
 /* Latest Notes */
 .latest-notes {
   margin-top: 2rem;
