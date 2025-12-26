@@ -1,6 +1,7 @@
 ---
 layout: default
 title: Resources
+permalink: /resources/
 nav_exclude: true
 ---
 

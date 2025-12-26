@@ -1,7 +1,8 @@
 ---
 layout: default
 title: Pine Labs
-slu: pine-labs
+slug: pine-labs
+published: true
 ---
 
 # Pine Labs

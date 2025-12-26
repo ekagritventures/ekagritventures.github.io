@@ -14,11 +14,12 @@ exclude:
   - Gemfile.lock
   - node_modules
   - README.md
-  - drafts
-  - obsidian-daily-note-template.md
-  - OBSIDIAN_SETUP_GUIDE.md
-  - DRAFT_MANAGEMENT_GUIDE.md
   - vendor
+  - _internal
+  - _templates
+  - .jekyll-cache
+  - .ruby-lsp
+  - .DS_Store
 
 collections:
   posts:

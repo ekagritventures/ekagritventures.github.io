@@ -160,7 +160,6 @@ pre {
 .site-footer {
   margin-top: 3rem;
   padding-top: 1rem;
-  border-top: 1px solid var(--border)
 }
 
 /* Article spacing */
@@ -205,4 +204,28 @@ th {
   font-size: 0.9rem;
   color: var(--muted);
   margin-bottom: 2rem;
+}
+
+/* Post Navigation */
+.post-nav {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-top: 3rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--border);
+}
+
+.post-nav a {
+  max-width: 45%;
+  font-size: 0.9rem;
+}
+
+.post-nav-prev {
+  text-align: left;
+}
+
+.post-nav-next {
+  text-align: right;
+  margin-left: auto;
 }
