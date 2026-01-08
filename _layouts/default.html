@@ -5,6 +5,20 @@
   <meta charset="UTF-8">
   <title>{{ page.title }} — {{ site.title }}</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!-- Google Analytics -->
+  {% if site.google_analytics and jekyll.environment == 'production' %}
+  <script async src="https://www.googletagmanager.com/gtag/js?id={{ site.google_analytics }}"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('set', 'anonymize_ip', true);
+    gtag('config', '{{ site.google_analytics }}', {
+      'page_path': '{{ page.url }}'
+    });
+  </script>
+  {% endif %}
   <meta name="description" content="{{ site.description }}">
   <meta name="author" content="Tatva Desai">
   <link rel="icon"

@@ -33,4 +33,7 @@ defaults:
     values:
       layout: default
 
+# Google Analytics (replace with your GA4 Measurement ID)
+google_analytics: "G-8PRNH9GG8M"
+
 
