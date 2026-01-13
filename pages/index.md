@@ -22,4 +22,6 @@ permalink: /
 
 ---
 
-[Research](/research/) · [Questions](/questions/) · [Resources](/resources/) · [About](/about/)
+[[Research]] · [[Questions]] · [[Resources]] · [[About]] · [[AI]]
+
+

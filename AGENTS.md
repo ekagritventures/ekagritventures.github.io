@@ -79,6 +79,15 @@ If a wikilink doesn't resolve:
 1. Ensure target file has YAML front matter (`---` block)
 2. Ensure filename matches the text inside `[[brackets]]`
 
+### Important: Always Use Wikilinks for Internal Links
+
+**Use `[[wikilinks]]`, not `[text](/url/)` for internal links.**
+
+- `[[AI]]` — Works in Obsidian AND converts to `/ai/` in Jekyll
+- `[AI](/ai/)` — Works on the website but **breaks in Obsidian** (opens a new file instead)
+
+This lets you navigate in Obsidian while the plugin handles URL conversion for the web.
+
 ---
 
 ## Obsidian Workflow

@@ -24,6 +24,11 @@ https://docs.google.com/document/d/1LK6XBz1aVZszw70dSVkcBDh4YcgOWI8pCeamGxP6bVA/
 
 ## Excel & Technicalities
 
-[Excel with Pete](https://www.youtube.com/@TheUnexcitingGuy/videos)\
+[Excel with Pete](https://www.youtube.com/@TheUnexcitingGuy/videos)
 
-# [[2026]] finds
+[[2026 |2026 Finds]]
+
+
+
+
+
