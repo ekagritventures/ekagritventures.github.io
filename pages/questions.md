@@ -13,6 +13,8 @@ permalink: /questions/
 - Can a megacorp be built in the quick-commerce space which doesn't require huge capex? The infra is scattered, tech plug-and-play possibility?( already existing things? reliance, dmart?)
 - What are the urban planning implications due to quick commerce?
 - If coding is being automated, does that mean new languages and their development is not needed? 
+- How do we make AI tacit? Skills.md and others attempts are being made.( Have to frame this in a better way.)
+
 
 
 
