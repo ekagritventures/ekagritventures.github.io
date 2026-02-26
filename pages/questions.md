@@ -14,6 +14,7 @@ permalink: /questions/
 - What are the urban planning implications due to quick commerce?
 - If coding is being automated, does that mean new languages and their development is not needed? 
 - How do we make AI tacit? Skills.md and others attempts are being made.( Have to frame this in a better way.)
+- **If the cost of coding is going to zero becasue of agents, most of the langagues/frameworks we know are formed for humans, so does that. mean that the new languages which will be formed( by ai or humans) be only agent readable only? also Ai can generate binaries directly!?**
 
 
 
