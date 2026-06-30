@@ -43,27 +43,45 @@ module Jekyll
   end
 
   # Phase 2: The Interceptor (Hook)
-  # Intercepts content right before rendering to HTML and fixes the links
+  # Applies Obsidian-flavored markdown transforms to a chunk of plain text
+  # (i.e. text that is NOT inside a code block or inline code span).
+  def self.transform_obsidian(text, link_map)
+    # Wikilinks: [[Target]] or [[Target|Label]]
+    text = text.gsub(/\[\[([^\]]+)\]\]/) do
+      inner = Regexp.last_match(1)
+      parts = inner.split('|', 2)
+      link_target = parts[0].strip
+      link_label = parts[1] ? parts[1].strip : link_target
+      url = link_map[link_target] || link_map[link_target.downcase]
+      url ? "[#{link_label}](#{url})" : link_label
+    end
+
+    # Highlights: ==text== -> <mark>text</mark> (single line, ignores ===)
+    text = text.gsub(/==(?!=)(?=\S)(.+?)(?<=\S)==(?!=)/) do
+      "<mark>#{Regexp.last_match(1)}</mark>"
+    end
+
+    text
+  end
+
+  # Intercepts content right before rendering to HTML and fixes the links.
+  # Code fences (``` / ~~~) and inline code spans (`...`) are left untouched
+  # so things like `if x == y` in code never get mangled.
   Jekyll::Hooks.register [:posts, :pages, :documents], :pre_render do |doc|
     link_map = WikilinkManager.link_map || {}
-    
-    # Check if content exists
-    if doc.content
-      doc.content = doc.content.gsub(/\[\[([^\]]+)\]\]/) do |match|
-        inner = Regexp.last_match(1)
-        
-        parts = inner.split('|', 2)
-        link_target = parts[0].strip
-        link_label = parts[1] ? parts[1].strip : link_target
-        
-        url = link_map[link_target] || link_map[link_target.downcase]
+    next unless doc.content
 
-        if url
-          "[#{link_label}](#{url})"
-        else
-          link_label
-        end
+    # Split on fenced code blocks, keeping the fences in the array.
+    fence = /(^[ \t]*(?:```|~~~).*?^[ \t]*(?:```|~~~)[ \t]*$)/m
+    doc.content = doc.content.split(fence).map do |segment|
+      if segment =~ /\A[ \t]*(?:```|~~~)/m
+        segment # fenced code block — leave as-is
+      else
+        # Within prose, protect inline code spans, then transform.
+        segment.split(/(`[^`\n]*`)/).map do |piece|
+          piece.start_with?('`') ? piece : Jekyll.transform_obsidian(piece, link_map)
+        end.join
       end
-    end
+    end.join
   end
 end

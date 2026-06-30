@@ -94,13 +94,29 @@ This lets you navigate in Obsidian while the plugin handles URL conversion for t
 
 ### Daily Notes
 
-Template location: `_templates/obsidian-daily-note-template.md`
+**Template file:** `_templates/obsidian-daily-note-template.md`
 
-Template creates posts with:
+**Obsidian Settings → Core Plugins → Daily Notes:**
+
+| Setting | Value |
+|---------|-------|
+| Date format | `YYYY/MMMM/YYYY-MM-DD-` |
+| New file location | `_posts` |
+| Template file location | `_templates/obsidian-daily-note-template` |
+
+> **Note:** The core Daily Notes plugin does **not** interpolate `{{date}}` tokens in the "New file location" field. To get year/month subfolders, put the path in the **Date format** field and keep "New file location" as the flat `_posts` folder.
+>
+> The **trailing `-`** in the date format is required: Jekyll only recognizes posts named `YYYY-MM-DD-something.md`. A file named `2026-06-30.md` (no trailing dash) is silently ignored, while `2026-06-30-.md` builds correctly. The clean URL comes from the `slug:` field in the template's front matter, so the trailing dash never shows up in the live link.
+
+**What this does:**
+Obsidian automatically creates daily notes in the correct Jekyll folder structure (`_posts/2026/June/2026-06-30.md`). When you later flip `published: true` and push to Git, Jekyll builds it automatically.
+
+**Template front matter creates:**
 - `layout: post`
 - `title: Daily Note YYYY-MM-DD`
-- `slug: daily-note-YYYY-MMM-DD-Do`
-- `published: false` (default — flip to `true` when ready)
+- `slug: daily-note-YYYY-MMM-DD-Do` (clean URL)
+- `published: false` (default — flip to `true` when ready to publish)
+- `categories:` for year and month (useful for archives)
 
 ### Draft Management
 

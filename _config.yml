@@ -24,7 +24,7 @@ exclude:
 collections:
   posts:
     output: true
-    permalink: /:title/
+    permalink: /:slug/
 
 defaults:
   - scope:

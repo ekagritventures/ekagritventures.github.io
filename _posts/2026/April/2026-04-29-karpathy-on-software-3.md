@@ -1,0 +1,28 @@
+---
+layout: post
+title: "Karpathy on Software 3.0"
+slug: karpathy-on-software-3
+date: 2026-04-29
+tags:
+published: true
+---
+
+
+## What did I read today?
+
+
+## What did I watch today?
+
+[Karpathy, AI Ascent](https://www.youtube.com/watch?v=96jN2OCOfLs)
+
+December '25 was inflection point for agentic coding.
+
+Software 3.0
+
+Anything can be made verifiable.
+
+Code quality is good, but not production-grade yet. Out of the box. Harness might be the key here?
+Council of LLMs still an unexplored idea.
+
+
+

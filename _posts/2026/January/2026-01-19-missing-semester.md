@@ -1,0 +1,16 @@
+---
+layout: post
+title: "Missing Semester"
+slug: missing-semester
+date: 2026-01-19
+tags:
+published: true
+---
+
+
+[The Missing Semester of your CS Education.](https://missing.csail.mit.edu/2026/course-shell/) is back with 2026 version. It is quite an important toolkit. I think for a semi-technical person, it is necessary they go through this, because
+
+1. It is [[Lindy]]
+2. It is the default mode of AI.
+
+

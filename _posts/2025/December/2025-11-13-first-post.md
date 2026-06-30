@@ -1,6 +1,7 @@
 ---
 layout: post
-title: presenting ekagrit ventures
+title: "Presenting Ekagrit Ventures"
+slug: first-post
 date: 2025-11-13
 tags:
 published: true

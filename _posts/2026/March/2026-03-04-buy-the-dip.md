@@ -1,0 +1,13 @@
+---
+layout: post
+title: "Buy the dip?"
+slug: buy-the-dip
+date: 2026-03-04
+tags:
+published: true
+---
+
+okay, the markets are in shambles. Everyone is saying buy the dip. I am already long gold. Which is a decent hedge but still, I know this is the opportunity to take advantage. But no ideas. This is bad. Or I am just a novice and this is good.
+
+
+

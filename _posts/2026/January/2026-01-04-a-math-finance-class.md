@@ -1,0 +1,20 @@
+---
+layout: post
+title: "A math-finance class"
+slug: a-math-finance-class
+date: 2026-01-04
+tags:
+published: true
+---
+
+
+## What did I read today?
+
+[Two Drinks with . . . the Youngest Female Self-Made Billionaire](https://www.thefp.com/p/two-drinks-with-the-youngest-female)
+
+Incidentally, MIT has recently released the math finance class that she and her co-founder took!
+
+## What did I watch today?
+
+[This Course](https://www.youtube.com/playlist?list=PLPnZfvKID1Sje5jWxt-4CSZD7bUI4gSPS) is a good find, you can do it in ~week, totally worth it.
+
