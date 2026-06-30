@@ -3,11 +3,15 @@
 *.base
 *.canvas
 
+# Private notes — excluded from the build and kept out of the public repo
+# (files stay locally in the Obsidian vault)
+_internal/
+
 # Documentation and guides (keep only essential files)
 *GUIDE*.md
 *guide*.md
 BEAUTIFUL_*.md
-OBSIDIAN_*.md  
+OBSIDIAN_*.md
 URL_*.md
 SIMPLE_*.md
 
