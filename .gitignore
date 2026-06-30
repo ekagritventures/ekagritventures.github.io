@@ -54,6 +54,7 @@ vendor/
 .ruby-version
 .ruby-gemset
 .bundle/config
+.ruby-lsp/
 
 # Jekyll development files
 .jekyll-metadata
@@ -73,9 +74,16 @@ yarn-error.log*
 .env.test
 .env.production
 
-# API keys and secrets (add specific patterns as needed)
-*secret*
-*key*
-*token*
-*password*
-*api*
+# API keys and secrets — specific patterns only.
+# NOTE: do NOT use broad globs like *key*/*api*/*token* here — they would
+# silently ignore legitimate content (e.g. a post named "api-economy.md").
+*.pem
+*.key
+*.p12
+id_rsa
+id_rsa.pub
+secrets.yml
+secrets.yaml
+.secrets
+credentials.json
+serviceAccount*.json
