@@ -18,3 +18,4 @@ So these are very real use cases that we are doing using AI today, and that is e
 https://files.tijorifinance.com/insight/india/59126/Conference%20Call/CC-Feb26.pdf
 
 
+Pine Labs is the first one in India to launch agentic commerce.
