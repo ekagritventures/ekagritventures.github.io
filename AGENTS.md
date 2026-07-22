@@ -49,6 +49,23 @@ This enables Obsidian-native features (wikilinks) to work seamlessly.
 
 ---
 
+## Custom Plugin: Auto-Slug (`_plugins/auto-slug.rb`)
+
+Derives a clean URL slug from each post's `title` at build time, so authoring
+in Obsidian only requires writing a `title:` — the URL becomes `/slugified-title/`
+automatically.
+
+- Slug missing / blank / a bare `YYYY-MM-DD` date → generated from the title.
+- An explicit word slug (e.g. `slug: my-url`) is always respected.
+- No title and no slug → falls back to the post date (never an empty slug, which
+  would collide with the homepage `/`).
+
+Runs as a Generator at `:highest` priority so slugs are normalized before the
+wikilinks mapper (`:high`) computes any `.url`. This also permanently prevents
+the "unquoted date slug" build crash (`slugify` receiving a Ruby `Date`).
+
+---
+
 ## Custom Plugin: Wikilinks (`_plugins/wikilinks.rb`)
 
 Converts Obsidian `[[wikilinks]]` to standard Markdown links during build.

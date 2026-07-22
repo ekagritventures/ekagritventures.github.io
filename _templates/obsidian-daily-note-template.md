@@ -1,10 +1,10 @@
 ---
 layout: post
-# Write a short, content-based title — this is what shows on the site.
+# Just write a short, content-based title. It shows on the site AND becomes
+# the URL (/slugified-title/) automatically — the build derives the slug from
+# this title (see _plugins/auto-slug.rb). Add an explicit `slug:` line only if
+# you want a URL different from the title.
 title: ""
-# Lowercase, hyphenated, content-based — becomes the URL (/your-slug/).
-# Defaults to the date so the link never breaks; replace with a content slug.
-slug: "{{date:YYYY-MM-DD}}"
 date: {{date:YYYY-MM-DD}}
 categories:
   - daily
