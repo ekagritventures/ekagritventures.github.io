@@ -60,6 +60,14 @@ automatically.
 - No title and no slug → falls back to the post date (never an empty slug, which
   would collide with the homepage `/`).
 
+**Collision-proof.** The plugin keeps a per-build "guest list" of every slug it
+hands out and forces uniqueness: if a slug is already taken it appends the post
+date (`a-slow-day-2026-07-23`), then a counter (`-2`) if needed. Posts are
+processed in path order, so the first/oldest post keeps the clean slug and
+existing URLs never shift. Two notes with the same title therefore never share a
+URL — e.g. daily notes titled "A Slow Day" on different days become `/a-slow-day/`
+and `/a-slow-day-<date>/`.
+
 Runs as a Generator at `:highest` priority so slugs are normalized before the
 wikilinks mapper (`:high`) computes any `.url`. This also permanently prevents
 the "unquoted date slug" build crash (`slugify` receiving a Ruby `Date`).

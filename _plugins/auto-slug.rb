@@ -1,32 +1,29 @@
 module Jekyll
-  # Auto-generate a clean URL slug from each post's `title` front matter.
+  # Auto-generate a clean, collision-proof URL slug from each post's `title`.
   #
-  # Workflow goal: in Obsidian you only write a `title:` — the slug (and thus
-  # the URL /your-title/) is derived automatically at build time.
+  # Authoring stays dead simple: in Obsidian you write only a `title:` and the
+  # build turns it into the URL /slugified-title/. No two posts can ever share a
+  # URL — the second to claim a slug gets a date (then a number) appended, while
+  # the first/oldest keeps the clean slug.
   #
-  # Implemented as a Generator at :highest priority so slugs are normalized
-  # BEFORE anything computes a document's `.url` (in particular the wikilinks
-  # mapper, which runs at :high). A :post_init hook is too early — front matter
-  # isn't parsed yet — so a generator is the correct seam.
-  #
-  # Rules per document:
-  #   * slug missing / blank            -> slugify(title)
-  #   * slug is a bare date YYYY-MM-DD  -> slugify(title)   (the template's
-  #     placeholder default, and the unquoted-date form that crashes the build)
-  #   * slug is a real word string      -> left untouched (manual slugs win)
-  #   * no usable title but slug is a
-  #     Date/Time object                -> stringified, so slugify never
-  #     receives a Date and aborts the build
+  # Runs as a Generator at :highest priority so slugs are finalized before
+  # anything reads a document's `.url` (notably the wikilinks mapper at :high).
+  # A :post_init hook is too early (front matter isn't parsed yet).
   class AutoSlug < Generator
     safe true
     priority :highest
 
     def generate(site)
-      docs = site.posts.docs + site.collections.values.flat_map(&:docs)
-      docs.uniq.each { |doc| fix(doc) }
+      used = {} # the guest list of addresses already handed out this build
+
+      # Deterministic order so the same post always wins the bare slug.
+      site.posts.docs.sort_by { |doc| doc.path.to_s }.each do |doc|
+        doc.data["slug"] = claim(base_slug(doc), doc, used)
+      end
     end
 
-    def fix(doc)
+    # The slug a post *wants*, before uniqueness is enforced.
+    def base_slug(doc)
       raw   = doc.data["slug"]
       title = doc.data["title"].to_s.strip
 
@@ -34,21 +31,39 @@ module Jekyll
                   raw.to_s.strip =~ /\A\d{4}-\d{2}-\d{2}\z/
       blank = raw.nil? || raw.to_s.strip.empty?
 
-      if (blank || date_like) && !title.empty?
-        doc.data["slug"] = Jekyll::Utils.slugify(title)
-      elsif raw.is_a?(Date) || raw.is_a?(Time)
-        doc.data["slug"] = raw.to_s
-      elsif blank
-        # No title and no slug: never leave it empty (an empty slug collides
-        # with the site homepage "/"). Fall back to the post date, else filename.
-        date = doc.respond_to?(:date) ? doc.date : doc.data["date"]
-        doc.data["slug"] =
-          if date.respond_to?(:strftime)
-            date.strftime("%Y-%m-%d")
-          else
-            Jekyll::Utils.slugify(File.basename(doc.path.to_s, ".*"))
-          end
-      end
+      chosen =
+        if !title.empty? && (blank || date_like)
+          title                                   # derive from the title
+        elsif blank
+          post_date(doc) || File.basename(doc.path.to_s, ".*")
+        else
+          raw.to_s                                # respect an explicit slug
+        end
+
+      Jekyll::Utils.slugify(chosen.to_s)
+    end
+
+    # Enforce global uniqueness: append the date, then a counter, until free.
+    def claim(base, doc, used)
+      base = "post" if base.empty?
+      return take(base, used) unless used.key?(base)
+
+      dated = "#{base}-#{post_date(doc)}".chomp("-")
+      return take(dated, used) unless used.key?(dated) || dated == base
+
+      n = 2
+      n += 1 while used.key?("#{dated}-#{n}")
+      take("#{dated}-#{n}", used)
+    end
+
+    def take(slug, used)
+      used[slug] = true
+      slug
+    end
+
+    def post_date(doc)
+      date = doc.respond_to?(:date) ? doc.date : doc.data["date"]
+      date.respond_to?(:strftime) ? date.strftime("%Y-%m-%d") : nil
     end
   end
 end
