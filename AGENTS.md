@@ -100,7 +100,7 @@ This lets you navigate in Obsidian while the plugin handles URL conversion for t
 
 | Setting | Value |
 |---------|-------|
-| Date format | `YYYY/MMMM/YYYY-MM-DD-` |
+| Date format | `YYYY/MM-MMMM/YYYY-MM-DD-` |
 | New file location | `_posts` |
 | Template file location | `_templates/obsidian-daily-note-template` |
 
@@ -109,7 +109,7 @@ This lets you navigate in Obsidian while the plugin handles URL conversion for t
 > The **trailing `-`** in the date format is required: Jekyll only recognizes posts named `YYYY-MM-DD-something.md`. A file named `2026-06-30.md` (no trailing dash) is silently ignored, while `2026-06-30-.md` builds correctly. The clean URL comes from the `slug:` field in the template's front matter, so the trailing dash never shows up in the live link.
 
 **What this does:**
-Obsidian automatically creates daily notes in the correct Jekyll folder structure (`_posts/2026/June/2026-06-30.md`). When you later flip `published: true` and push to Git, Jekyll builds it automatically.
+Obsidian automatically creates daily notes in the correct Jekyll folder structure (`_posts/2026/06-June/2026-06-30.md`). The numeric prefix (`06-June`) keeps months in chronological order in Obsidian's file explorer; it does not affect URLs, which come from the `slug:` field. When you later flip `published: true` and push to Git, Jekyll builds it automatically.
 
 **Template front matter creates:**
 - `layout: post`
