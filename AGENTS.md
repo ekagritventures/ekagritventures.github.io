@@ -191,6 +191,39 @@ Color palette uses Flexoki-inspired variables: `--tx`, `--tx-2`, `--tx-3`, `--ui
 
 - `theme.js` — Light/dark toggle with localStorage persistence
 - `external-links.js` — Opens external links in new tab with `rel="noopener noreferrer"`
+- `subscribe.js` — Progressive enhancement for the footer email form (see Email Capture)
+
+---
+
+## Email Capture (Kit / ConvertKit)
+
+A newsletter signup box lives in the footer of every page (`_layouts/default.html`),
+styled in `assets/styles.css` (`.subscribe*`, Flexoki, light/dark aware).
+
+**Toggle:** the whole form is gated on `kit_form_action` in `_config.yml`. Paste the
+Kit form's HTML action URL (e.g. `https://app.kit.com/forms/9717135/subscriptions`)
+to switch it on; blank it to hide the form entirely. Field name is Kit's
+`email_address`.
+
+**Behaviour** (`assets/subscribe.js`, progressive enhancement):
+- With JS: the form posts into a hidden iframe so the visitor never leaves the page,
+  then an inline `.subscribe-status` message tells them to confirm and check
+  spam/Promotions. The message is optimistic — it can't read Kit's cross-origin
+  response, so it assumes success once the (validated) email is submitted.
+- Without JS: falls back to `target="_blank"`, opening Kit's confirmation page in a
+  new tab.
+
+**Copy:** the promise line ("I only send long-form pieces and a monthly summary")
+is the `.subscribe-note` paragraph in the layout.
+
+**Double opt-in is intentional** (kept for deliverability). That means Kit sends a
+confirmation email, which is why the on-page message mentions checking spam. Two
+open, optional improvements:
+- The confirmation email's wording/branding is plain — customise it in Kit
+  (form → Settings → confirmation email) if desired. Cosmetic only.
+- Emails land in spam/Promotions because sending is from Kit's shared, unauthenticated
+  domain. The real fix is a **custom domain + DKIM/SPF authentication in Kit** — a
+  ~$10–15/yr project, deferred until there's a custom domain.
 
 ---
 
@@ -210,6 +243,17 @@ Site available at `http://localhost:4000`
 Push to `main` branch → GitHub Actions builds and deploys automatically.
 
 Workflow: `.github/workflows/jekyll.yml`
+
+**Deploy gotchas:**
+- GitHub occasionally fails to create a workflow run for a push. If a push doesn't
+  deploy, trigger it manually: `gh workflow run "Deploy Jekyll with Plugins" --ref main`.
+- Only **one** GitHub Pages deployment can run at a time. Don't fire a manual
+  `workflow_dispatch` while a push-triggered run is still going — the second deploy
+  fails with "in progress deployment … cancel X first". Let one finish before starting
+  another.
+- Verify a deploy against the **commit SHA**, not just "latest run"
+  (`gh run list --commit <sha>`) — watching the wrong run gives false confidence.
+- Jekyll skips **future-dated** posts (date after today) unless `--future`.
 
 ---
 
@@ -271,6 +315,10 @@ Key settings:
 - Proper gitignore for Obsidian artifacts
 
 ### Could Consider
+- **Custom domain + email authentication** — Point a custom domain at Pages and
+  authenticate a Kit sending subdomain (DKIM/SPF) so newsletter + confirmation emails
+  reach the main inbox instead of spam/Promotions. (See Email Capture.)
+- **Nicer Kit confirmation email** — Customise its wording/branding in Kit's dashboard.
 - **Backlinks display** — Show "pages that link to this page" at bottom of posts
 - **RSS feed** — Already configured (`jekyll-feed` plugin), may want to customize
 - **Search** — No search currently; could add client-side search (Lunr.js)
