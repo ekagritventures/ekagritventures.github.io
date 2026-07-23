@@ -61,12 +61,14 @@
         <input id="sub-email" type="email" name="email_address" placeholder="you@example.com" autocomplete="email" aria-label="Email address" required>
         <button type="submit">Subscribe</button>
       </div>
+      <p class="subscribe-status" role="status" aria-live="polite" hidden></p>
     </form>
     {% endif %}
     <p>© {{ 'now' | date: '%Y' }} {{ site.title }} · <a href="/feed.xml">RSS</a></p>
   </footer>
   <script src="/assets/theme.js"></script>
   <script src="/assets/external-links.js"></script>
+  <script src="/assets/subscribe.js"></script>
 </body>
 
 </html>

@@ -241,6 +241,13 @@ img {
   max-width: 24rem
 }
 
+.subscribe-status {
+  font-size: .8rem;
+  color: var(--tx-2);
+  margin: 0;
+  max-width: 24rem
+}
+
 .subscribe-row {
   display: flex;
   gap: .5rem;
