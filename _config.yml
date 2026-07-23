@@ -36,4 +36,9 @@ defaults:
 # Google Analytics (replace with your GA4 Measurement ID)
 google_analytics: "G-8PRNH9GG8M"
 
+# Email capture (Kit / ConvertKit). Paste the form's HTML action URL here to
+# switch the footer subscribe box on; leave empty to hide it entirely.
+# Looks like: https://app.kit.com/forms/1234567/subscriptions
+kit_form_action: ""
+
 

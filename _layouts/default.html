@@ -54,6 +54,15 @@
     </div>
   </main>
   <footer class="wrap footer">
+    {% if site.kit_form_action and site.kit_form_action != "" %}
+    <form class="subscribe" action="{{ site.kit_form_action }}" method="post" target="_blank">
+      <label for="sub-email">Get new notes by email</label>
+      <div class="subscribe-row">
+        <input id="sub-email" type="email" name="email_address" placeholder="you@example.com" autocomplete="email" required>
+        <button type="submit">Subscribe</button>
+      </div>
+    </form>
+    {% endif %}
     <p>© {{ 'now' | date: '%Y' }} {{ site.title }} · <a href="/feed.xml">RSS</a></p>
   </footer>
   <script src="/assets/theme.js"></script>

@@ -222,6 +222,68 @@ img {
   font-size: .875rem
 }
 
+.subscribe {
+  margin-bottom: 1.5rem
+}
+
+.subscribe label {
+  display: block;
+  font-size: .875rem;
+  color: var(--tx-2);
+  margin-bottom: .5rem
+}
+
+.subscribe-row {
+  display: flex;
+  gap: .5rem;
+  max-width: 24rem
+}
+
+.subscribe input[type="email"] {
+  flex: 1;
+  min-width: 0;
+  padding: .5rem .65rem;
+  font: inherit;
+  font-size: .9rem;
+  color: var(--tx);
+  background: var(--bg-2);
+  border: 1px solid var(--ui-3);
+  border-radius: 4px
+}
+
+.subscribe input[type="email"]::placeholder {
+  color: var(--tx-3)
+}
+
+.subscribe input[type="email"]:focus {
+  outline: none;
+  border-color: var(--cy)
+}
+
+.subscribe button {
+  padding: .5rem .9rem;
+  font: inherit;
+  font-size: .875rem;
+  font-weight: 600;
+  color: var(--bg);
+  background: var(--tx);
+  border: 1px solid var(--tx);
+  border-radius: 4px;
+  cursor: pointer;
+  white-space: nowrap
+}
+
+.subscribe button:hover {
+  background: var(--tx-2);
+  border-color: var(--tx-2)
+}
+
+@media (max-width: 480px) {
+  .subscribe-row {
+    flex-direction: column
+  }
+}
+
 .post-date {
   font-size: .8rem;
   color: var(--tx-3);
