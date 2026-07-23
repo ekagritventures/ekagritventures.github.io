@@ -229,8 +229,16 @@ img {
 .subscribe label {
   display: block;
   font-size: .875rem;
-  color: var(--tx-2);
-  margin-bottom: .5rem
+  font-weight: 600;
+  color: var(--tx);
+  margin-bottom: .25rem
+}
+
+.subscribe-note {
+  font-size: .8rem;
+  color: var(--tx-3);
+  margin: 0 0 .6rem;
+  max-width: 24rem
 }
 
 .subscribe-row {
