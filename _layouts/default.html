@@ -56,10 +56,9 @@
   <footer class="wrap footer">
     {% if site.kit_form_action and site.kit_form_action != "" %}
     <form class="subscribe" action="{{ site.kit_form_action }}" method="post" target="_blank">
-      <label for="sub-email">Get new notes by email</label>
       <p class="subscribe-note">I only send long-form pieces and a monthly summary — nothing else.</p>
       <div class="subscribe-row">
-        <input id="sub-email" type="email" name="email_address" placeholder="you@example.com" autocomplete="email" required>
+        <input id="sub-email" type="email" name="email_address" placeholder="you@example.com" autocomplete="email" aria-label="Email address" required>
         <button type="submit">Subscribe</button>
       </div>
     </form>
