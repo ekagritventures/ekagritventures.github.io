@@ -53,7 +53,9 @@ This enables Obsidian-native features (wikilinks) to work seamlessly.
 
 Derives a clean URL slug from each post's `title` at build time, so authoring
 in Obsidian only requires writing a `title:` — the URL becomes `/slugified-title/`
-automatically.
+automatically. Also renames source files in `_posts/` so the filename
+includes the slugified title (e.g. `2026-07-27-craftsmanship.md`), keeping
+bare `YYYY-MM-DD.md` files alive until a title is filled in.
 
 - Slug missing / blank / a bare `YYYY-MM-DD` date → generated from the title.
 - An explicit word slug (e.g. `slug: my-url`) is always respected.
@@ -131,17 +133,19 @@ This lets you navigate in Obsidian while the plugin handles URL conversion for t
 
 > **Note:** The core Daily Notes plugin does **not** interpolate `{{date}}` tokens in the "New file location" field. To get year/month subfolders, put the path in the **Date format** field and keep "New file location" as the flat `_posts` folder.
 >
-> The **trailing `-`** in the date format is required: Jekyll only recognizes posts named `YYYY-MM-DD-something.md`. A file named `2026-06-30.md` (no trailing dash) is silently ignored, while `2026-06-30-.md` builds correctly. The clean URL comes from the `slug:` field in the template's front matter, so the trailing dash never shows up in the live link.
+> The **trailing `-`** in the date format is required: Jekyll only recognizes posts named `YYYY-MM-DD-something.md`. A file named `2026-06-30.md` (no trailing dash) is silently ignored, while `2026-06-30-.md` builds correctly.
+>
+> At build time, the auto-slug plugin renames bare daily notes (`2026-06-30-.md`) to include the slugified title (`2026-06-30-my-title.md`), so you only need to write the `title:` in the frontmatter — the filename updates automatically.
 
 **What this does:**
-Obsidian automatically creates daily notes in the correct Jekyll folder structure (`_posts/2026/06-June/2026-06-30.md`). The numeric prefix (`06-June`) keeps months in chronological order in Obsidian's file explorer; it does not affect URLs, which come from the `slug:` field. When you later flip `published: true` and push to Git, Jekyll builds it automatically.
+Obsidian automatically creates daily notes in the correct Jekyll folder structure (`_posts/2026/06-June/2026-06-30-.md`). The numeric prefix (`06-June`) keeps months in chronological order in Obsidian's file explorer; it does not affect URLs, which come from the slug derived from the title. When you later flip `published: true` and push to Git, a Jekyll build renames the file to include the slug and the site is built automatically.
 
 **Template front matter creates:**
 - `layout: post`
-- `title: Daily Note YYYY-MM-DD`
-- `slug: daily-note-YYYY-MMM-DD-Do` (clean URL)
+- `title: ""` (fill in yourself — drives both the slug and the filename)
 - `published: false` (default — flip to `true` when ready to publish)
 - `categories:` for year and month (useful for archives)
+- No explicit `slug:` field needed — the build derives it from the title via `_plugins/auto-slug.rb`
 
 ### Draft Management
 

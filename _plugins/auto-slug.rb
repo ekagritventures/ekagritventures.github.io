@@ -1,6 +1,10 @@
 module Jekyll
   # Auto-generate a clean, collision-proof URL slug from each post's `title`.
   #
+  # Also renames source files in `_posts/` so the filename becomes
+  # `YYYY-MM-DD-slugified-title.md` (e.g. `2026-07-27-craftsmanship.md`),
+  # keeping bare `YYYY-MM-DD.md` files alive until a title is filled in.
+  #
   # Authoring stays dead simple: in Obsidian you write only a `title:` and the
   # build turns it into the URL /slugified-title/. No two posts can ever share a
   # URL — the second to claim a slug gets a date (then a number) appended, while
@@ -19,6 +23,11 @@ module Jekyll
       # Deterministic order so the same post always wins the bare slug.
       site.posts.docs.sort_by { |doc| doc.path.to_s }.each do |doc|
         doc.data["slug"] = claim(base_slug(doc), doc, used)
+      end
+
+      # Rename source files: YYYY-MM-DD.md → YYYY-MM-DD-slug.md
+      site.posts.docs.each do |doc|
+        rename_source(doc)
       end
     end
 
@@ -64,6 +73,32 @@ module Jekyll
     def post_date(doc)
       date = doc.respond_to?(:date) ? doc.date : doc.data["date"]
       date.respond_to?(:strftime) ? date.strftime("%Y-%m-%d") : nil
+    end
+
+    # Rename the post file on disk so its name reflects the slug:
+    #   2026-07-27-.md            → 2026-07-27-craftsmanship.md
+    #   2026-07-27-something.md   → 2026-07-27-craftsmanship.md  (title changed)
+    #   2026-07-27-craftsmanship.md → no-op  (already correct)
+    def rename_source(doc)
+      slug = doc.data["slug"]
+      return if slug.nil? || slug.empty?
+
+      old_path = doc.path.to_s
+      ext      = File.extname(old_path)
+      bare     = File.basename(old_path, ext)
+
+      match = bare.match(/\A(\d{4}-\d{2}-\d{2})(?:-(.*))?\z/)
+      return unless match
+
+      date_part    = match[1]
+      new_basename = "#{date_part}-#{slug}#{ext}"
+      new_path     = File.join(File.dirname(old_path), new_basename)
+
+      return if old_path == new_path
+      return if File.exist?(new_path) && new_path != old_path
+
+      FileUtils.mv(old_path, new_path)
+      doc.instance_variable_set(:@path, Pathname.new(new_path))
     end
   end
 end
