@@ -98,7 +98,10 @@ module Jekyll
       return if File.exist?(new_path) && new_path != old_path
 
       FileUtils.mv(old_path, new_path)
-      doc.instance_variable_set(:@path, Pathname.new(new_path))
+      # Keep @path a String (as Document#initialize sets it). A Pathname here
+      # crashes rendering: Jekyll's PathManager calls `.start_with?` on
+      # document.path, which Pathname doesn't implement.
+      doc.instance_variable_set(:@path, new_path)
     end
   end
 end
