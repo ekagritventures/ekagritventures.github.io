@@ -329,3 +329,19 @@ Key settings:
 - **Tags page** — Front matter supports tags, but no tag index page exists
 - **Reading time** — Could add estimated reading time to posts
 - **Last updated date** — Show when content was last modified
+
+---
+
+## Agent skills
+
+### Issue tracker
+
+Issues live as local markdown under `.scratch/<feature>/` in this repo — not GitHub Issues. See `docs/agents/issue-tracker.md`.
+
+### Triage labels
+
+Five canonical triage roles with default label strings (`needs-triage`, `needs-info`, `ready-for-agent`, `ready-for-human`, `wontfix`), recorded as the `Status:` line in each ticket file. See `docs/agents/triage-labels.md`.
+
+### Domain docs
+
+Single-context: one `CONTEXT.md` at the repo root plus `docs/adr/`. See `docs/agents/domain.md`.
